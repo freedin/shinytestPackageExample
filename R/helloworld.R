@@ -3,6 +3,7 @@
 #' @import shiny
 #' @importFrom graphics plot
 #' @importFrom utils head
+#' @importFrom roperators chr
 #' @export
 helloWorldApp <- function() {
   utils::data(cars)
@@ -13,12 +14,12 @@ helloWorldApp <- function() {
     ),
     server = function(input, output) {
       output$plot <- renderPlot({
+        a <- chr(9)
         plot(head(cars, input$n), xlim = range(cars[[1]]), ylim = range(cars[[2]]))
       })
     }
   )
 }
-
 
 # This is needed to make R CMD check happy
 globalVariables("cars")

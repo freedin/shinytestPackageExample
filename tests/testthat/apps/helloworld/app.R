@@ -1,3 +1,0 @@
-library(shinytestPackageExample)
-
-helloWorldApp()

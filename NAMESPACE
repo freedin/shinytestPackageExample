@@ -3,4 +3,5 @@
 export(helloWorldApp)
 import(shiny)
 importFrom(graphics,plot)
+importFrom(roperators,chr)
 importFrom(utils,head)

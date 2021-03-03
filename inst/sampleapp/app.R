@@ -7,6 +7,7 @@ shinyApp(
   ),
   server = function(input, output) {
     output$plot <- renderPlot({
+      a <- chr(9)
       plot(head(cars, input$n), xlim = range(cars[[1]]), ylim = range(cars[[2]]))
     })
   }

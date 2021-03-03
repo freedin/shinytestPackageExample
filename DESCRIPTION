@@ -7,11 +7,12 @@ License: Unlimited
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 7.1.1
 Suggests: 
     testthat,
     shinytest
 Imports: 
-    shiny
+    shiny,
+    roperators
 Remotes:
     rstudio/shinytest
