@@ -11,5 +11,5 @@ data(cars)
 #    })
 #  }
 #)
-
+pkgload::load_all()
 helloWorldApp()
